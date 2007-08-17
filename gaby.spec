@@ -194,8 +194,8 @@ rm -fr %buildroot
 %lang(no) %{_datadir}/locale/no/LC_MESSAGES/gaby.mo
 %lang(pl) %{_datadir}/locale/pl/LC_MESSAGES/gaby.mo
 %lang(sv) %{_datadir}/locale/sv/LC_MESSAGES/gaby.mo
-%{_mandir}/man1/gaby.1.bz2
-%{_mandir}/man1/gabybuilder.1.bz2
+%{_mandir}/man1/gaby.*
+%{_mandir}/man1/gabybuilder.*
 %{_menudir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 
