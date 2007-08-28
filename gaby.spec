@@ -64,7 +64,6 @@ EOF
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop << EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=Gaby
 Comment=Personal Database Manager
 Exec=%{_bindir}/%{name}
