@@ -67,7 +67,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop << EOF
 Name=Gaby
 Comment=Personal Database Manager
 Exec=%{_bindir}/%{name}
-Icon=databases_section.png
+Icon=databases_section
 Terminal=false
 Type=Application
 StartupNotify=true
