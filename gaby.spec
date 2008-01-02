@@ -9,6 +9,7 @@ Source:		http://www.0d.be/projects/%{name}/archives/%{name}-%{version}.tar.bz2
 Patch0:		gaby-2.0.2-gcc-build-fix-patch
 
 Url:		http://www.0d.be/projects/%{name}
+BuildRoot:	%_tmppath/%name-%version-root
 
 BuildRequires:	libesound-devel python-gtk-devel libglade2.0-devel libORBit2-devel
 BuildRequires:	docbook-utils docbook-dtd30-sgml
