@@ -50,16 +50,6 @@ find $RPM_BUILD_ROOT -name '*.so' | xargs chrpath -d
 chrpath -d $RPM_BUILD_ROOT%{_bindir}/*
 
 # (sb) menu item
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="%{_bindir}/%{name}" \
-needs="x11" \
-section="More Applications/Databases" \
-icon="databases_section.png" \
-title="Gaby - Personal Database Manager" \
-longtitle="Gaby - Personal Database Manager" \
-xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop << EOF
@@ -195,7 +185,6 @@ rm -fr %buildroot
 %lang(sv) %{_datadir}/locale/sv/LC_MESSAGES/gaby.mo
 %{_mandir}/man1/gaby.*
 %{_mandir}/man1/gabybuilder.*
-%{_menudir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 
 
