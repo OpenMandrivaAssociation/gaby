@@ -17,7 +17,6 @@ BuildRequires:	libglib-devel chrpath gtk+1.2-devel python-devel
 BuildConflicts: %{_lib}gdk-pixbuf2-devel libglade0-devel libgnome32-devel
 
 %description
-
 Gaby is a small personal databases manager for Linux using GTK+ and Gnome 
 (if available) for its GUI.
 
