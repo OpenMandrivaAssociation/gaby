@@ -1,4 +1,4 @@
-Summary:	Gaby is a small personal databases manager for Linux
+Summary:	Small personal databases manager for Linux
 Name:		gaby
 Version:	2.0.3
 Release:	%mkrel 8
