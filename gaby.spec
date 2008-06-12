@@ -67,11 +67,15 @@ EOF
 rm -f $RPM_BUILD_ROOT%{_bindir}/{gnomecard,videobase,gcd,appindex}
 mv $RPM_BUILD_ROOT%{_bindir}/gbc $RPM_BUILD_ROOT%{_bindir}/gbc-gaby
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %clean
 rm -fr %buildroot
