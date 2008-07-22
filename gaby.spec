@@ -1,7 +1,7 @@
 Summary:	Small personal databases manager for Linux
 Name:		gaby
 Version:	2.0.3
-Release:	%mkrel 9
+Release:	%mkrel 11
 License:	GPL
 Group:		Databases
 
